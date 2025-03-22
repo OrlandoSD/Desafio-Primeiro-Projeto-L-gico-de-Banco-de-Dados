@@ -63,3 +63,46 @@ O modelo lógico e físico do banco foram estruturados e podem ser visualizados 
 diagramas/modelo_logico.png
 
 diagramas/modelo_EER.png
+
+
+#Desenvolvimento do Front-End
+##Descrição Geral
+O front-end foi desenvolvido para fornecer uma interface simples e intuitiva, permitindo aos usuários interagir com os dados armazenados no banco de dados. Ele foi construído utilizando HTML, CSS e JavaScript, garantindo compatibilidade e fácil manutenção.
+
+#Funcionalidades Principais
+##Exibição Dinâmica de Dados:
+
+Informações sobre clientes, pedidos, produtos e fornecedores são apresentadas em tabelas estilizadas para melhor visualização.
+
+#Consulta de Dados:
+
+Requisições HTTP são feitas para buscar informações em tempo real, simulando uma interação com uma API que se conecta ao banco de dados.
+
+#Estilização Responsiva:
+
+Utilização de CSS para garantir que o design seja claro e adaptável a diferentes dispositivos.
+
+#Estrutura do Front-End
+HTML: Responsável por estruturar a página com tabelas para exibição de dados, títulos, seções e elementos visuais.
+
+CSS: Estilização da interface para torná-la mais agradável e organizada.
+
+JavaScript: Gerenciamento da lógica para buscar e exibir dados na página.
+
+Arquivos do Front-End
+index.html: Contém a estrutura principal da página.
+
+styles.css: Arquivo para a estilização de todos os elementos da página.
+
+script.js: Contém a lógica para manipulação de dados e integração com o servidor ou API.
+
+Como Testar o Front-End
+Certifique-se de que todos os arquivos estão na pasta raiz do projeto:
+
+/meu-projeto
+  index.html
+  styles.css
+  script.js
+Abra o arquivo index.html diretamente no navegador ou utilize a extensão Live Server no Visual Studio Code para visualizar a página em tempo real.
+
+Certifique-se de que o back-end está configurado para retornar dados que o front-end pode consumir.
