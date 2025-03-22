@@ -1,0 +1,44 @@
+Esquema Gráfico para o Cenário de E-commerce
+Tabelas Principais e Relacionamentos
+
+Clientes (ID_Cliente é PK) se relaciona com Pedidos (ID_Cliente como FK em Pedidos) — Relacionamento 1:N.
+
+Pedidos (ID_Pedido é PK) se relaciona com Pagamentos (N formas de pagamento por pedido) através da tabela associativa Pedidos_Pagamentos — Relacionamento 1:N.
+
+Pedidos (ID_Pedido é PK) se relaciona com Entregas (ID_Pedido como FK em Entregas) — Relacionamento 1:1.
+
+Produtos e Fornecedores possuem um relacionamento N:N representado pela tabela associativa Produtos_Fornecedores.
+
+Detalhes das Entidades
+Clientes:
+
+PK: ID_Cliente
+
+Tipo_Cliente com CHECK (valores 'PJ' ou 'PF')
+
+CPF_CNPJ único.
+
+Pedidos:
+
+PK: ID_Pedido
+
+FK: ID_Cliente
+
+Produtos_Fornecedores:
+
+PK composta por ID_Produto e ID_Fornecedor.
+
+Entregas:
+
+PK: ID_Entrega
+
+FK: ID_Pedido
+
+Inclui Status_Entrega e Codigo_Rastreamento.
+
+Visualização
+No diagrama gráfico:
+
+Use linhas com "1" e "N" para representar os relacionamentos 1:N (como entre Clientes e Pedidos).
+
+Use uma tabela associativa (Produtos_Fornecedores) para modelar o relacionamento N:N entre Produtos e Fornecedores.

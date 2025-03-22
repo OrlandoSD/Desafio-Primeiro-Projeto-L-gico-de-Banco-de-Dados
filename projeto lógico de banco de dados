@@ -1,0 +1,95 @@
+Projeto Lógico de Banco de Dados
+Entidades e Atributos
+Clientes
+
+ID_Cliente (PK)
+
+Nome
+
+Tipo_Cliente (PJ ou PF) (Enumeração que restringe o valor a um tipo único)
+
+CPF_CNPJ (único e não nulo)
+
+Endereço
+
+Contato
+
+Pedidos
+
+ID_Pedido (PK)
+
+ID_Cliente (FK para Clientes)
+
+Data_Pedido
+
+Valor_Total
+
+Produtos
+
+ID_Produto (PK)
+
+Nome_Produto
+
+Preço
+
+Estoque
+
+Fornecedores
+
+ID_Fornecedor (PK)
+
+Nome_Fornecedor
+
+Contato
+
+Endereço
+
+Pagamentos
+
+ID_Pagamento (PK)
+
+Tipo_Pagamento (ex.: cartão, boleto, etc.)
+
+Status_Pagamento
+
+Pedidos_Pagamentos (Tabela associativa para o relacionamento 1:N entre Pedidos e Pagamentos)
+
+ID_Pedido (FK para Pedidos)
+
+ID_Pagamento (FK para Pagamentos)
+
+Entregas
+
+ID_Entrega (PK)
+
+ID_Pedido (FK para Pedidos)
+
+Status_Entrega (ex.: em andamento, concluído)
+
+Codigo_Rastreamento
+
+Produtos_Fornecedores (Tabela associativa para o relacionamento N:N entre Produtos e Fornecedores)
+
+ID_Produto (FK para Produtos)
+
+ID_Fornecedor (FK para Fornecedores)
+
+Relacionamentos
+Clientes e Pedidos: Relacionamento de 1:N. Um cliente pode fazer vários pedidos, mas um pedido pertence a apenas um cliente.
+
+Pedidos e Pagamentos: Relacionamento de 1:N, pois um pedido pode ser pago com múltiplas formas de pagamento.
+
+Pedidos e Entregas: Relacionamento de 1:1. Cada pedido possui uma entrega associada.
+
+Produtos e Fornecedores: Relacionamento de N:N, representado pela tabela associativa Produtos_Fornecedores.
+
+Restrições e Regras
+Chaves Primárias (PK): Garantem unicidade para identificar cada registro.
+
+Chaves Estrangeiras (FK): Mantêm a integridade referencial entre tabelas relacionadas.
+
+Constraints de Unicidade: CPF_CNPJ deve ser único para evitar duplicidade.
+
+Restrição CHECK: Garantir que o Tipo_Cliente seja apenas "PJ" ou "PF".
+
+Relacionamentos Associativos: Tabelas como Produtos_Fornecedores e Pedidos_Pagamentos são usadas para relacionamentos complexos (N:N ou 1:N).
