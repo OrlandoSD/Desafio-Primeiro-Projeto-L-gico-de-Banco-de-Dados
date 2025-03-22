@@ -1,10 +1,10 @@
 # Desafio-Primeiro-Projeto-L-gico-de-Banco-de-Dados
 Construindo seu Primeiro Projeto Lógico de Banco de Dados(desafio da DIO)
 
-##Descrição do Projeto
+## Descrição do Projeto
 Este projeto implementa a modelagem lógica e física de um banco de dados para um cenário de e-commerce. O objetivo é oferecer uma solução robusta para gerenciar clientes, pedidos, produtos, fornecedores, formas de pagamento e entregas, garantindo a consistência dos dados e viabilizando consultas complexas.
 
-##Estrutura do Banco de Dados
+## Estrutura do Banco de Dados
 O banco de dados foi modelado seguindo os requisitos do cenário:
 
 Um cliente pode ser Pessoa Jurídica (PJ) ou Pessoa Física (PF), mas não pode ter ambos os tipos de informação.
@@ -15,7 +15,7 @@ Entregas possuem status e código de rastreio únicos.
 
 Relacionamentos entre entidades foram definidos com base no modelo lógico e no modelo EER.
 
-#Principais Tabelas
+# Principais Tabelas
 Clientes: Armazena informações sobre os clientes (PJ ou PF).
 
 Pedidos: Registra os pedidos realizados pelos clientes.
@@ -30,7 +30,7 @@ Entregas: Controla o status e o código de rastreio das entregas.
 
 Produtos_Fornecedores: Representa o relacionamento N:N entre Produtos e Fornecedores.
 
-#Tecnologias Utilizadas
+# Tecnologias Utilizadas
 SGBD: MySQL ou SQL Server.
 
 Ferramentas: MySQL Workbench para modelagem EER, GitHub para gerenciamento do repositório.
@@ -42,7 +42,7 @@ inserir_dados.sql: Script para popular o banco com dados de teste.
 
 consultas.sql: Conjunto de queries SQL que respondem perguntas do cenário.
 
-#Exemplos de Consultas
+# Exemplos de Consultas
 O projeto contempla queries que atendem aos seguintes tópicos:
 
 Recuperações simples com SELECT Statement: Ex.: Quantos pedidos foram feitos por cada cliente.
@@ -57,7 +57,7 @@ Condições de filtros aos grupos com HAVING Statement: Ex.: Identificar cliente
 
 Junções entre tabelas: Ex.: Relação entre produtos e fornecedores.
 
-#Modelos de Dados
+# Modelos de Dados
 O modelo lógico e físico do banco foram estruturados e podem ser visualizados nos diagramas disponíveis no repositório:
 
 diagramas/modelo_logico.png
@@ -65,24 +65,24 @@ diagramas/modelo_logico.png
 diagramas/modelo_EER.png
 
 
-#Desenvolvimento do Front-End
+# Desenvolvimento do Front-End
 ##Descrição Geral
 O front-end foi desenvolvido para fornecer uma interface simples e intuitiva, permitindo aos usuários interagir com os dados armazenados no banco de dados. Ele foi construído utilizando HTML, CSS e JavaScript, garantindo compatibilidade e fácil manutenção.
 
-#Funcionalidades Principais
+# Funcionalidades Principais
 ##Exibição Dinâmica de Dados:
 
 Informações sobre clientes, pedidos, produtos e fornecedores são apresentadas em tabelas estilizadas para melhor visualização.
 
-#Consulta de Dados:
+# Consulta de Dados:
 
 Requisições HTTP são feitas para buscar informações em tempo real, simulando uma interação com uma API que se conecta ao banco de dados.
 
-#Estilização Responsiva:
+# Estilização Responsiva:
 
 Utilização de CSS para garantir que o design seja claro e adaptável a diferentes dispositivos.
 
-#Estrutura do Front-End
+# Estrutura do Front-End
 HTML: Responsável por estruturar a página com tabelas para exibição de dados, títulos, seções e elementos visuais.
 
 CSS: Estilização da interface para torná-la mais agradável e organizada.
